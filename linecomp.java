@@ -14,7 +14,22 @@ class linecomp{
         System.out.println("Enter the y coordinate of second point");
         int y2 = sc.nextInt();
         double len = Math.sqrt(Math.pow((x2-x1),2) + Math.pow((y2-y1),2));
-        System.out.println("Length of line is: "+len);
-
+        System.out.println("Enter the x coordinate of first point for second line");
+        int X1 = sc.nextInt();
+        System.out.println("Enter the y coordinate of first point for second line");
+        int Y1 = sc.nextInt();
+        System.out.println("Enter the x coordinate of second point for second line");
+        int X2 =  sc.nextInt();
+        System.out.println("Enter the y coordinate of second point for second line");
+        int Y2 = sc.nextInt();
+        double len2 = Math.sqrt(Math.pow((X2-X1),2) + Math.pow((Y2-Y1),2));
+        String length1 = Double.toString(len);
+        String length2 = Double.toString(len2);
+        if(length1.equals(length2)){
+            System.out.println("Length of the lines is equal");
+        }
+        else {
+            System.out.println("The lines arent equal");
+        }
     }
 }
