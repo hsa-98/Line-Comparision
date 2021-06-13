@@ -28,8 +28,11 @@ class linecomp{
         if(length1.equals(length2)){
             System.out.println("Length of the lines is equal");
         }
-        else {
-            System.out.println("The lines arent equal");
+        else if(length1.compareTo(length2)>0){
+            System.out.println("Line 1 is greater than line 2");
+        }
+        else{
+            System.out.println("Line2 is greater than line1");
         }
     }
 }
